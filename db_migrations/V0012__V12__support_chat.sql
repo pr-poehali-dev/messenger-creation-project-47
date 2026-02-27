@@ -1,0 +1,3 @@
+INSERT INTO am_chats (type, name, avatar_color, created_by) SELECT 'group', 'Техническая поддержка', '#2d8cf0', id FROM am_users WHERE phone = '+79694501843';
+INSERT INTO am_chat_members (chat_id, user_id) SELECT c.id, u.id FROM am_chats c, am_users u WHERE c.name = 'Техническая поддержка' AND u.phone = '+79694501843';
+INSERT INTO am_messages (chat_id, sender_id, text) SELECT c.id, u.id, 'Добро пожаловать в AstreyMessange! Здесь вы можете задать любой вопрос нашей команде. Мы ответим в ближайшее время 🚀' FROM am_chats c, am_users u WHERE c.name = 'Техническая поддержка' AND u.phone = '+79694501843';

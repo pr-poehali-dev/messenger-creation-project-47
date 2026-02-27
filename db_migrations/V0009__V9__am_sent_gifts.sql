@@ -1,0 +1,1 @@
+CREATE TABLE am_sent_gifts (id BIGSERIAL PRIMARY KEY, gift_id BIGINT NOT NULL, from_user_id BIGINT NOT NULL, to_user_id BIGINT NOT NULL, message TEXT DEFAULT '', is_displayed BOOLEAN DEFAULT TRUE, created_at TIMESTAMPTZ DEFAULT NOW());

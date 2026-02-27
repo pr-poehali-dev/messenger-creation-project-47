@@ -1,0 +1,1 @@
+CREATE TABLE am_star_transactions (id BIGSERIAL PRIMARY KEY, user_id BIGINT NOT NULL, type VARCHAR(32) NOT NULL, amount INT NOT NULL, description TEXT, ref_id BIGINT, created_at TIMESTAMPTZ DEFAULT NOW());

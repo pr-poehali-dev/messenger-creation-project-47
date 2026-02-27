@@ -1,0 +1,1 @@
+CREATE TABLE am_gifts (id BIGSERIAL PRIMARY KEY, name VARCHAR(64) NOT NULL, emoji VARCHAR(8) NOT NULL, description TEXT, price_stars INT NOT NULL, rarity VARCHAR(16) NOT NULL DEFAULT 'common', is_premium_only BOOLEAN DEFAULT FALSE, gradient_from VARCHAR(16) DEFAULT '#2d8cf0', gradient_to VARCHAR(16) DEFAULT '#7c3aed', created_at TIMESTAMPTZ DEFAULT NOW());

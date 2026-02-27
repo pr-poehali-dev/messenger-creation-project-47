@@ -1,0 +1,1 @@
+CREATE TABLE am_chat_members (chat_id BIGINT NOT NULL, user_id BIGINT NOT NULL, joined_at TIMESTAMPTZ DEFAULT NOW(), PRIMARY KEY (chat_id, user_id));

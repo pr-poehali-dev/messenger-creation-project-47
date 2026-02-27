@@ -1,0 +1,1 @@
+CREATE TABLE am_messages (id BIGSERIAL PRIMARY KEY, chat_id BIGINT NOT NULL, sender_id BIGINT NOT NULL, text TEXT NOT NULL, read_by BIGINT[] DEFAULT '{}', created_at TIMESTAMPTZ DEFAULT NOW());

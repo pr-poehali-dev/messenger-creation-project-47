@@ -1,0 +1,1 @@
+CREATE TABLE am_chats (id BIGSERIAL PRIMARY KEY, type VARCHAR(16) NOT NULL DEFAULT 'personal', name VARCHAR(128), avatar_color VARCHAR(16) DEFAULT '#2d8cf0', created_by BIGINT, created_at TIMESTAMPTZ DEFAULT NOW());

@@ -1,0 +1,1 @@
+CREATE TABLE am_payment_requests (id BIGSERIAL PRIMARY KEY, user_id BIGINT NOT NULL, stars_amount INT NOT NULL, rub_amount INT NOT NULL, status VARCHAR(16) NOT NULL DEFAULT 'pending', comment TEXT, confirmed_by BIGINT, created_at TIMESTAMPTZ DEFAULT NOW(), confirmed_at TIMESTAMPTZ);
